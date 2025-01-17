@@ -117,3 +117,12 @@ h1 {
 h1:hover {
     color: red;
 }
+
+h4 {
+    color: green;
+    transition: color 0.5s ease-in-out;
+}
+
+h4:hover {
+    color: red;
+}
