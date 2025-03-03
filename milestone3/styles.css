@@ -3,7 +3,7 @@
     padding: 0px;
     display:grid;
     background-color: rgba(255, 145, 0, 0.767);
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0, 175px)) repeat(3, minmax(0, 175px)) minmax(0px, 1fr);
 }
 nav {
     background-color: rgba(165, 17, 17, 0.74);
