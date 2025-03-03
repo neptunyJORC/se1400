@@ -93,14 +93,13 @@ body {
 
 footer {
     background-color: #f0f0f0;
-    padding: 10px;
     text-align: center;
     border: 5px solid;
     background-image: linear-gradient(45deg, orange, blue);
     background-size: 200% 200%;
     animation: rotateGradient 10s linear infinite;
-    height: 70px;
-    grid-column: 1 / -1;
+    grid-area: 4 / 1 / 5 / -1;
+    position: fixed;
 }
 
 @keyframes rotateGradient {
