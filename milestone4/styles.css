@@ -17,13 +17,13 @@ header {
     height: 50px;
 }
 
-#past-projects {
+#leftcolumn {
     grid-column: 2 / span 3;
     background-color: rgba(15, 206, 110, 0.3);
     height: 600px;
 }
 
-#images {
+#rightcolumn {
     grid-column: 5 / span 3;
     background-color: rgba(192, 235, 39, 0.459);
     height: 600px;
