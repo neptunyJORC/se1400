@@ -17,13 +17,13 @@ header {
     height: 50px;
 }
 
-#past-projects {
+#leftcolumn {
     grid-column: 2 / span 3;
     background-color: rgba(15, 206, 110, 0.3);
     height: 600px;
 }
 
-#images {
+#rightcolumn {
     grid-column: 5 / span 3;
     background-color: rgba(192, 235, 39, 0.459);
     height: 600px;
@@ -93,14 +93,13 @@ body {
 
 footer {
     background-color: #f0f0f0;
-    padding: 10px;
     text-align: center;
     border: 5px solid;
     background-image: linear-gradient(45deg, orange, blue);
     background-size: 200% 200%;
     animation: rotateGradient 10s linear infinite;
-    height: 70px;
-    grid-column: 1 / -1;
+    grid-area: 4 / 1 / 5 / -1;
+    position: fixed;
 }
 
 @keyframes rotateGradient {
