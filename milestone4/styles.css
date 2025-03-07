@@ -61,6 +61,27 @@
     animation: background-gradient 30s linear infinite;
     grid-column: 2 / -2;
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-text {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  .header-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .header-text p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
   }
   
   #leftcolumn {
@@ -71,6 +92,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  
+  .game-info {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .game-info h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
   }
   
   #rightcolumn {
