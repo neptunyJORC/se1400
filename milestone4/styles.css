@@ -1,39 +1,3 @@
-#wrapper {
-    margin: 0px;
-    padding: 0px;
-    display: grid;
-    background-color: rgba(255, 145, 0, 0.767);
-    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0, 150px)) minmax(0px, 1fr) repeat(3, minmax(0, 150px)) minmax(0px, 1fr);
-}
-
-nav {
-    background-color: rgba(165, 17, 17, 0.74);
-    grid-column: 1 / -1;
-    height: 80px;
-}
-
-header {
-    grid-column: 2 / -2;
-    height: 50px;
-}
-
-#leftcolumn {
-    grid-column: 2 / span 3;
-    background-color: rgba(15, 206, 110, 0.3);
-    height: 600px;
-}
-
-#rightcolumn {
-    grid-column: 5 / span 3;
-    background-color: rgba(192, 235, 39, 0.459);
-    height: 600px;
-}
-
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
-
 .site-wrapper {
     position: relative;
     overflow: hidden;
@@ -91,16 +55,7 @@ body {
     filter: invert(0%);
 }
 
-footer {
-    background-color: #f0f0f0;
-    text-align: center;
-    border: 5px solid;
-    background-image: linear-gradient(45deg, orange, blue);
-    background-size: 200% 200%;
-    animation: rotateGradient 10s linear infinite;
-    grid-area: 4 / 1 / 5 / -1;
-    position: fixed;
-}
+
 
 @keyframes rotateGradient {
     0% {
@@ -164,9 +119,60 @@ h2 {
     color: white;
 }
 
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#wrapper {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    background-color: rgba(255, 145, 0, 0.767);
+    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0, 175px)) repeat(3, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+nav {
+    background-color: rgba(165, 17, 17, 0.74);
+    grid-column: 1 / -1;
+    height: 80px;
+}
+
+header {
+    background-image: linear-gradient(45deg, black, darkblue, darkorange);
+    background-size: 200% 200%;
+    animation: background-gradient 30s linear infinite;
+    grid-column: 2 / -2;
+    height: 250px;
+}
+
 main {
-    align-content: center;
     background-color: rgba(69, 69, 199, 0.466);
-    height: 100px;
-    grid-column: 2 / 5;
+}
+
+#leftcolumn {
+    grid-column: 2 / span 3;
+    background-color: rgba(15, 206, 110, 0.3);
+    height: 600px;
+}
+
+#rightcolumn {
+    grid-column: 5 / span 3;
+    background-color: rgba(192, 235, 39, 0.459);
+    height: 600px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    border: 5px solid;
+    background-image: linear-gradient(45deg, orange, blue);
+    background-size: 200% 200%;
+    animation: rotateGradient 10s linear infinite;
+    grid-column: 1 / -1;
+}
+
+.flex-cointainer {
+    display: flex;
+    flex-direction: row;
 }
