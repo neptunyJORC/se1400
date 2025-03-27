@@ -186,12 +186,14 @@ footer {
 .content-box img {
     width: 100%;
     max-width: 250px;
-    height: auto;
+    height: 200px;
+    max-height: 200px;
     border-radius: 10px;
     margin-bottom: 10px;
     object-fit: contain;
-    max-height: 200px;
 }
+
+
 
 .content-box p {
     font-size: 16px;
