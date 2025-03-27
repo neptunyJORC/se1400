@@ -95,10 +95,13 @@ header {
     background-size: 200% 200%;
     animation: background-gradient 30s linear infinite;
     grid-column: 2 / -2;
-    height: 250px;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 
 .header-text {
