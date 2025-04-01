@@ -171,7 +171,6 @@ footer {
     animation: rotateGradient 10s linear infinite;
     bottom: 0;
     width: 100%;
-    position:absolute;
 }
 
 .content-box {
