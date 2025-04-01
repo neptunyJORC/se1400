@@ -167,6 +167,7 @@ footer {
     background-size: 200% 200%;
     animation: rotateGradient 10s linear infinite;
     bottom: 0;
+    width: 100%;
     position:absolute;
 }
 
@@ -253,4 +254,7 @@ footer {
     100% {
         background-position: 0% 0%;
     }
+}
+#background-wrapper {
+    background-color: rgba(255, 145, 0, 0.767);
 }
