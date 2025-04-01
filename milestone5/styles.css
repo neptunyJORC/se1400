@@ -1,3 +1,6 @@
+html {
+    background-color: rgba(255, 145, 0, 0.767);
+}
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -254,7 +257,4 @@ footer {
     100% {
         background-position: 0% 0%;
     }
-}
-#background-wrapper {
-    background-color: rgba(255, 145, 0, 0.767);
 }
