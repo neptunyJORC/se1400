@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -95,6 +96,8 @@ nav {
         "leftcolumn rightcolumn rightcolumn rightcolumn"
         "footer footer footer footer";
     flex-grow: 1;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 header {
@@ -104,11 +107,15 @@ header {
     grid-column: 1 / -1;
     height: auto;
     display: flex;
+    left: 0;
+    right: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     text-align: center;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .header-text {
@@ -137,6 +144,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     height: auto;
+    box-sizing: border-box;
 }
 
 .game-info {
@@ -155,10 +163,10 @@ header {
     background-color: rgba(192, 235, 39, 0.459);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
     height: auto;
+    box-sizing: border-box;
 }
 
 footer {
@@ -173,6 +181,9 @@ footer {
     padding: 10px;
     bottom: 0;
     width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .content-box {
@@ -200,8 +211,6 @@ footer {
     object-fit: contain;
 }
 
-
-
 .content-box p {
     font-size: 16px;
     color: white;
@@ -228,19 +237,15 @@ footer {
     0% {
         background-position: 0% 0%;
     }
-
     25% {
         background-position: 100% 0%;
     }
-
     50% {
         background-position: 100% 100%;
     }
-
     75% {
         background-position: 0% 100%;
     }
-
     100% {
         background-position: 0% 0%;
     }
@@ -250,12 +255,37 @@ footer {
     0% {
         background-position: 0% 0%;
     }
-
     50% {
         background-position: 100% 100%;
     }
-
     100% {
         background-position: 0% 0%;
     }
 }
+
+@media (max-width: 1000px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 145, 0, 0.767);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #leftcolumn, #rightcolumn {
+        width: 100%;
+        grid-column: auto;
+    }
+
+    header, footer {
+        width: 100%;
+    }
+
+
+    audio {
+        width: 90%;
+        max-width: 300px;
+    }   
+}
+
