@@ -87,7 +87,7 @@ nav {
     margin: 0;
     padding: 0;
     display: grid;
-    background-color: rgba(221, 101, 21, 0.74);
+    background-color: rgba(221, 101, 21, 0.877);
     grid-template-columns: 1fr 3fr 3fr 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
@@ -373,4 +373,17 @@ footer {
 }
 .test-wrapper{
     background-color: rgba(221, 170, 30, 0.74);;
+}
+
+.contact-image{
+    width: 150px;
+    height: 150px;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.contact-image:hover {
+    width: 200px;
+    height: 200px;
 }
