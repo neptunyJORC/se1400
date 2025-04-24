@@ -13,14 +13,15 @@
 <body class="contact-page">
     <div id="wrapper">
         <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="partners.html">Partners</a></li>
+            <div class="menu-toggle" onclick="toggleMenu(this)">☰</div>
+            <ul class="nav-list" id="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="partners.html">Partners</a></li>
             </ul>
-        </nav>
+          </nav>
 
         <header>
             <div class="header-text">
@@ -61,5 +62,13 @@
         </footer>
     </div>
 </body>
-</div>
+
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('show');
+    this.classList.toggle('active');
+    });
+</script>
+
 </html>
