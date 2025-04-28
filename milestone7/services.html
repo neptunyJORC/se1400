@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alright Services</title>
+    <link rel="icon" href="images/alright_logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/alright_logo.png" alt="Logo">
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu(this)">☰</div>
+            <ul class="nav-list" id="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="partners.html">Partners</a></li>
+            </ul>
+          </nav>
+
+        <header>
+            <div class="header-text">
+                <h1>Our Services at Alright Games</h1>
+                <p>Here’s what we can do (besides crying about our buggy code):</p>
+            </div>
+        </header>
+
+        <section id="leftcolumn" class="test-wrapper">
+            <div class="content-box">
+                <img src="images/godot-clear.png" alt="Godot Engine">
+                <h3>Godot Engine</h3>
+                <p>We use Godot for 2D and 3D projects alike. It's open-source, fast, and flexible. It is NOT pronounced "Go Dot"</p>
+            </div>
+
+            <div class="content-box">
+                <img src="images/unreal.png" alt="Unreal Engine">
+                <h3>Unreal Engine</h3>
+                <p>Need stunning visuals and cutting-edge performance? We use Unreal to bring high-end projects to life.</p>
+            </div>
+        </section>
+
+        <section id="rightcolumn" class="test-wrapper">
+            <div class="content-box">
+                <img src="images/blender.png" alt="Blender Design">
+                <h3>Blender Design</h3>
+                <p>From modeling and texturing to animation, we use Blender to build every world and asset from scratch.</p>
+            </div>
+
+            <div class="content-box">
+                <img src="images/killunity.png" alt="No Unity">
+                <h3>We Choose Not to Use Unity</h3>
+                <p>Due to recent changes in their business practices, we’ve decided to avoid using Unity in our projects. 
+                We prefer open and developer-friendly platforms!</p>
+            </div>
+            
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Jorc's Milestone Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('show');
+    this.classList.toggle('active');
+    });
+</script>
+
+</html>

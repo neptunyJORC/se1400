@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Alright Homepage</title>
+    <link rel="icon" href="images/alright_logo.png" type="image/png">
+</head>
+
+
+
+<body>
+    <div id="wrapper">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/alright_logo.png" alt="Logo">
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu(this)">☰</div>
+            <ul class="nav-list" id="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="partners.html">Partners</a></li>
+            </ul>
+          </nav>
+          
+
+        <header>
+            <div class="header-text">
+                <h1>Welcome to Alright Games!</h1>
+                <p>We’re all about making fun and exciting games that anyone can enjoy. Whether you love action,
+                    puzzles, or just having a good time, we’ve got something for you. Our goal is to bring everyone
+                    together with cool games that keep you coming back for more. Let’s play and have some fun!</p>
+            </div>
+        </header>
+
+        <section id="leftcolumn">
+            <div class="content-box">
+                <img src="https://img.itch.zone/aW1nLzE5OTYyOTc2LnBuZw==/315x250%23c/%2BgIFNb.png" alt="Game Image">
+                <h3>DTAS 2: Antpocalypse</h3>
+                <p>Join the fight against mutant ants in the ultimate FPS chaos.</p>
+            </div>
+
+            <div class="content-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVt8PjFS4xKrlxeb4h-x85-4KZ7GAuG9136g&s"
+                    alt="Feature Image">
+                <h3>Game Features</h3>
+                <p>Fast-paced action, intense battles, and an immersive storyline.</p>
+            </div>
+        </section>
+
+        <section id="rightcolumn">
+            <div class="content-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tSMAOWcOsvGssJ9LTFkcTdVM2EF54DjBAw&s"
+                    alt="Ant Image">
+                <h3>Meet A.N.T</h3>
+                <p>The ultimate fighter in a war against an unstoppable insect army.</p>
+            </div>
+
+            <div class="content-box">
+                <img src="images\gameplay.png" alt="Gameplay">
+                <h3>Gameplay Sneak Peek</h3>
+                <p>Experience the thrill with high-speed combat and explosive action.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Jorc's Milestone Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('show');
+    this.classList.toggle('active');
+    });
+</script>
+
+</html>
