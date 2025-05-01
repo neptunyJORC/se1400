@@ -164,5 +164,22 @@
     createBloodDrips(20); 
 </script>
 
+<div id="reveal-button" style="display: none; position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 20;">
+    <button style="background: none; border: 2px solid red; color: red; padding: 10px 20px; font-size: 18px; cursor: pointer; font-family: monospace; animation: flicker 2s infinite alternate;">
+        enter the truth
+    </button>
+</div>
+
+<script>
+    setTimeout(() => {
+        document.getElementById('reveal-button').style.display = 'block';
+    }, 30000);
+
+    document.querySelector('#reveal-button button').addEventListener('click', () => {
+        window.location.href = 'compromise.html';
+    });
+</script>
+
+
 </body>
 </html>

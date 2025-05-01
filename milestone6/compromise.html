@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the truth</title>
+    <link rel="icon" href="images/bad_logo.png" type="image/png">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #c00;
+            font-family: 'Courier New', monospace;
+            padding: 40px;
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            font-size: 50px;
+            color: #f00;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #111;
+            padding: 30px;
+            border: 1px solid #400;
+            box-shadow: 0 0 30px red;
+        }
+
+        .glitch {
+            font-size: 20px;
+            color: #d33;
+            text-shadow: 2px 0 red, -2px 0 #600;
+            animation: flicker 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.7;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.9; }
+            5% { opacity: 0.2; }
+            10% { opacity: 1; }
+            15% { opacity: 0.3; }
+            20% { opacity: 1; }
+            100% { opacity: 0.9; }
+        }
+
+        .redacted {
+            background-color: #111;
+            color: #111;
+            border-bottom: 1px dotted #800;
+            cursor: pointer;
+        }
+
+        .redacted:hover {
+            color: red;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #400;
+            font-size: 12px;
+        }
+        
+        a{
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ALRIGHT GAMES // RECORD #001</h1>
+        <p class="glitch">the veil is thin. the mask is slipping.</p>
+
+        <p>
+            they said it was a <span class="redacted">game studio</span>.<br>
+            they said it was <span class="redacted">just for fun</span>.<br>
+            but what was buried beneath the code was never meant to be <span class="redacted">seen</span>.
+        </p>
+
+        <p>
+            the first incident happened on <span class="redacted">██/██/2024</span>.<br>
+            the player <span class="redacted"><a href="EMlogs.html">████████████████</a></span> before their connection terminated.
+        </p>
+
+        <p>
+            logs recovered from server "A-ROOM-7":
+        </p>
+
+        <p>
+            <em>> user: admin01<br>
+            > exec: load_dt2_hidden_layer<br>
+            > response: [ACCESS DENIED]<br>
+            > response: [UNAUTHORIZED - BLOOD SEAL REQUIRED]</em>
+        </p>
+
+        <p class="glitch">
+            you shouldn't have come here.
+        </p>
+
+        <div class="footer">
+            [ ALRIGHT GAMES INTERNAL // NOT FOR DISTRIBUTION ]<br>
+            trace id: 8341A-F3R-ZX92 // clearance level: compromised
+        </div>
+    </div>
+</body>
+</html>

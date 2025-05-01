@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Logs</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff88;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: #ff0044;
+      margin-bottom: 2rem;
+      animation: flicker 3s infinite;
+    }
+
+    .log {
+      background: rgba(0, 0, 0, 0.5);
+      border-left: 4px solid #00ff88;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .log:nth-of-type(1) { animation-delay: 1s; }
+    .log:nth-of-type(2) { animation-delay: 3s; }
+    .log:nth-of-type(3) { animation-delay: 4s; }
+    .log:nth-of-type(4) { animation-delay: 5s; }
+    .log:nth-of-type(5) { animation-delay: 6.5s; }
+    .log:nth-of-type(6) { animation-delay: 7s; }
+    .log:nth-of-type(7) { animation-delay: 7.2s; }
+    .log:nth-of-type(8) { animation-delay: 7.3s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 22%, 24%, 55% {
+        opacity: 0.3;
+      }
+    }
+
+    .glitch {
+      color: #ff0044;
+      animation: glitch 1.5s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 red, -2px 0 blue; }
+      50% { text-shadow: -2px 0 red, 2px 0 blue; }
+      100% { text-shadow: 2px 0 red, -2px 0 blue; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="glitch">EMPLOYEE LOGS - XS-CORP</h1>
+
+    <div class="log">
+        <strong>Log #001</strong><br>
+        First week here. The onboarding process was weird—very clinical. No names, just ID numbers. No windows. They said it's standard procedure for "containment zones."
+    </div>
+
+    <div class="log">
+        <strong>Log #014</strong><br>
+        Heard a sound coming from Sector 7 again. No one's assigned there. Security said to "ignore auditory anomalies." I'm starting to feel uneasy.
+    </div>
+
+    <div class="log">
+        <strong>Log #023</strong><br>
+        Something is wrong. People I saw last week are gone. Their desks are empty—like they were never here. I found a folder labeled <em>"EXHUMATION: Phase III."</em> I don't think this is a software company...
+    </div>
+
+    <div class="log">
+        <strong>Log #031</strong><br>
+        They changed my ID badge without telling me. It now says “Tier 2 Clearance” but I never applied for that. Since then, the lights outside my unit stay red. I don’t know what that means.
+    </div>
+  
+    <div class="log">
+        <strong>Log #045</strong><br>
+        The vending machine in Hallway C dispensed a small sealed envelope instead of chips. Inside was a note: <em>“Do not trust her.”</em> There’s no one here by that name.
+    </div>
+  
+    <div class="log">
+        <strong>Log #050</strong><br>
+        There was an "Employee Wellness Broadcast" piped into my office today. Just static for 3 minutes, then a voice whispered, <em>"The walls remember."</em> Then silence.
+    </div>
+  
+    <div class="log">
+        <strong>Log #062</strong><br>
+        I passed out during my shift. Woke up with dried blood under my nails and a bandage on my neck. The med-bot said “Routine sample extraction.” I never consented to anything.
+    </div>
+  
+    <div class="log">
+        <strong>Log #077</strong><br>
+        Someone left a journal on my desk. It’s written in my handwriting, but I don’t remember writing it. The last page just says: <em>“You were warned.”</em>
+    </div>
+  
+  </div>
+</body>
+</html>
