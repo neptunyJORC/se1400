@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threshold Breach</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #ff0044;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      animation: flicker 3s infinite;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: #00ff88;
+      text-decoration: none;
+      font-size: 0.85rem;
+      border: 1px solid #00ff88;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #00ff8833;
+    }
+
+    .log-snippet {
+      background-color: #111;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-left: 3px solid #ff0044;
+      font-size: 0.85rem;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 22%, 24%, 55% {
+        opacity: 0.3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>ACCESS DENIED</h1>
+  <p>
+    You have attempted to breach the threshold. This action has been logged. Your credentials will be reviewed.
+  </p>
+
+  <p><em>You've been here before, <span id="userTag">the amnestics are not strong enough</span>. You shouldn’t have come back.</em></p>
+
+  <div class="log-snippet">
+    :: ERR: unauthorized.user - traceID#4407A9 ::
+    <br>
+    :: memory leak :: sector unresolved ::
+    <br>
+    :: reset countdown - pending ::
+  </div>
+
+  <div style="margin-top:2rem; background:#000; height:60px; width:60%; position:relative;">
+    <span style="color:#ff0044; position:absolute; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+      It’s behind you.
+    </span>
+  </div>
+
+  <p id="glitchLine" style="margin-top: 3rem; color:#ff0044; font-size:0.8rem;"></p>
+
+  <a href="index.html">Return to Safety</a>
+
+  <script>
+    const lines = [
+      "RECOMPILING MEMORY IMAGE...",
+      "ERROR: CANNOT LOCATE CONSCIOUSNESS CORE.",
+      "ALERT: OBSERVER STILL ACTIVE.",
+      "WHO TOLD YOU TO COME HERE?",
+      "PLEASE STOP DIGGING.",
+      "YOU ARE NOT ALONE."
+    ];
+    let idx = 0;
+    setInterval(() => {
+      document.getElementById("glitchLine").textContent = lines[idx];
+      idx = (idx + 1) % lines.length;
+    }, 4000);
+  </script>
+</body>
+</html>

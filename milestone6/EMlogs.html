@@ -4,7 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Employee Logs</title>
+  <link rel="icon" href="images/bad_logo.png" type="image/png" />
   <style>
+
+    .secret {
+      position: relative;
+      cursor: pointer;
+      color: inherit;
+      text-decoration: underline dotted #00ff8855;
+    }
+
+    .secret::after {
+      content: "what...???";
+      position: absolute;
+      bottom: 120%;
+      left: 0;
+      background-color: #000;
+      color: #ff0044;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-5px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      border: 1px solid #ff004488;
+      z-index: 99;
+    }
+
+    .secret:hover::after {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+
+    .hidden-link {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    color: #011b4e; 
+    font-size: 0.85rem;
+    text-decoration: none;
+    z-index: 10;
+    }
+
+    .hidden-link:hover {
+      text-decoration: underline;
+      color: #003366; 
+    }
+
+
     body {
       background-color: #000;
       color: #00ff88;
@@ -95,49 +143,59 @@
   
 </head>
 <body>
+  <a href="index.html" class="hidden-link">Forget?</a>
+
   <div class="container">
-    <h1 class="glitch">EMPLOYEE LOGS - XS-CORP</h1>
+    <h1 class="glitch">EMPLOYEE LOGS - ALRIGHT CONTRACTOR</h1>
 
     <div class="log">
-        <strong>Log #001</strong><br>
-        First week here. The onboarding process was weird—very clinical. No names, just ID numbers. No windows. They said it's standard procedure for "containment zones."
+      <strong>Log #001</strong><br>
+      First week at the facility. Onboarding was highly structured—no introductions, just badge assignments. There are no windows in the work zones, which I assume is due to project confidentiality.
     </div>
-
+    
     <div class="log">
-        <strong>Log #014</strong><br>
-        Heard a sound coming from Sector 7 again. No one's assigned there. Security said to "ignore auditory anomalies." I'm starting to feel uneasy.
+      <strong>Log #014</strong><br>
+      Noticed occasional low-frequency sounds near Sector 7. Mentioned it to security; they said it was "equipment cycling." Still, I haven’t seen anyone working there.
     </div>
-
+    
     <div class="log">
-        <strong>Log #023</strong><br>
-        Something is wrong. People I saw last week are gone. Their desks are empty—like they were never here. I found a folder labeled <em>"EXHUMATION: Phase III."</em> I don't think this is a software company...
+      <strong>Log #023</strong><br>
+      A few employees I was introduced to last week seem to have been reassigned—desks are cleared, no forwarding info. Found a file marked “Phase III - Internal.” I left it where I found it.
     </div>
-
+    
     <div class="log">
-        <strong>Log #031</strong><br>
-        They changed my ID badge without telling me. It now says “Tier 2 Clearance” but I never applied for that. Since then, the lights outside my unit stay red. I don’t know what that means.
+      <strong>Log #031</strong><br>
+      My badge was updated to “Tier β Clearance” overnight. No one mentioned the change. Doors I couldn’t open before now respond to me, but I haven’t been instructed to use them.
     </div>
-  
+    
     <div class="log">
-        <strong>Log #045</strong><br>
-        The vending machine in Hallway C dispensed a small sealed envelope instead of chips. Inside was a note: <em>“Do not trust her.”</em> There’s no one here by that name.
+      <strong>Log #045</strong><br>
+      Vending machine in Hallway C malfunctioned—dispensed a folded inventory slip instead of snacks. It had a line highlighted: “Surplus: Observation Tape (Unfiled).” No idea what that means.
     </div>
-  
+    
     <div class="log">
-        <strong>Log #050</strong><br>
-        There was an "Employee Wellness Broadcast" piped into my office today. Just static for 3 minutes, then a voice whispered, <em>"The walls remember."</em> Then silence.
+      <strong>Log #050</strong><br>
+      A wellness video played automatically in the lounge. It was mostly static with occasional text flashes—something about “sensory drift calibration.” May have been a technical error.
     </div>
-  
+    
     <div class="log">
-        <strong>Log #062</strong><br>
-        I passed out during my shift. Woke up with dried blood under my nails and a bandage on my neck. The med-bot said “Routine sample extraction.” I never consented to anything.
+      <strong>Log #062</strong><br>
+      Woke up from a nap at my desk with a minor scratch on my arm. Medical unit flagged it as "routine data sync contact point." Not sure I understand, but I feel fine.
     </div>
-  
+    
     <div class="log">
-        <strong>Log #077</strong><br>
-        Someone left a journal on my desk. It’s written in my handwriting, but I don’t remember writing it. The last page just says: <em>“You were warned.”</em>
+      <strong>Log #077</strong><br>
+      A memo appeared on my workstation. No sender, but it’s formatted like my reports. The closing line just reads: “You’ve reached the <b><a href="threshold.html" class="secret">threshold</a></b>.”
+      I think it might be an internal test.
     </div>
+    
   
   </div>
 </body>
+
+<footer>
+  <p style="text-align:center; font-size: 0.75rem; color: #053a05; margin-top: 4rem;">
+  Memory Cache Full. Consider reset.
+</p>
+</footer>
 </html>
