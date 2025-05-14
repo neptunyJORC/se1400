@@ -4,83 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Alright Games</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>About Alright</title>
     <link rel="icon" href="images/alright_logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div id="wrapper">
         <nav>
             <a href="index.html" class="logo">
-                <img src="images/alright_logo.png" alt="Alright Games Logo">
+                <img src="images/alright_logo.png" alt="Logo">
             </a>
             <div class="menu-toggle" onclick="toggleMenu(this)">☰</div>
             <ul class="nav-list" id="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="partners.html">Partners</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="partners.html">Partners</a></li>
             </ul>
-        </nav>
+          </nav>
 
         <header>
             <div class="header-text">
                 <h1>About Alright Games</h1>
-                <p>Turning ridiculous ideas into borderline spaghetti code since... whenever we felt like it.</p>
+                <p> Here at Alright Games, we try our best to turn ridiculous game ideas into borderline spaghetti code.</p>
             </div>
         </header>
 
-        <main>
-            <section id="leftcolumn">
-                <div class="content-box">
-                    <h3>Behind the Scenes</h3>
-                    <p>Every great Alright Game starts with a dumb idea... and some equally dumb people.</p>
-                    <img src="images/concept art.jpg" alt="Concept Sketch">
-                    <p>Does this make sense? No. Will it ever? Also no. And that’s the magic!</p>
-                </div>
+        <section id="leftcolumn">
+            <div class="content-box">
+                <h3>Behind the Scenes</h3>
+                <p>Ever wondered what goes into making an Alright Game? Well, it starts with a dumb idea, and some dumb people.</p>
+                <img src="images/concept art.jpg" alt="Concept Art">
+                <p>Here’s an early concept sketch from one of our projects. Does it make sense? Probably not, and it never will.</p>
+            </div>
 
-                <div class="content-box">
-                    <h3>Prototyping</h3>
-                    <p>We whip up some janky prototypes that somehow (miraculously) turn into games.</p>
-                    <img src="images/DTAS-1-proto.png" alt="Prototype Madness">
-                    <p>When something goes horribly wrong, we just call it a "feature." Problem solved!</p>
-                </div>
-            </section>
+            <div class="content-box">
+                <h3>Prototyping</h3>
+                <p>We start with some really janky prototypes before things start resembling an actual game.</p>
+                <img src="images/DTAS-1-proto.png" alt="Prototype in action">
+                <p>Sometimes things go... horribly wrong, we just call them "features"</p>
+            </div>
+        </section>
 
-            <section id="rightcolumn">
-                <div class="content-box">
-                    <h3>Meet the Team</h3>
-                    <p>We’re a bunch of sleep-deprived, professional procrastinators doing our best.</p>
-                    <img src="images/teamwork.jpg" alt="Our Very Professional Team">
-                    <p>We don't have all the answers, but we *do* have Google. That’s basically the same thing, right?</p>
-                </div>
+        <section id="rightcolumn">
+            <div class="content-box">
+                <h3>Meet the Team</h3>
+                <p>Alright Games is made up of a group of sleep-deprived, professional procrastinating idiots.</p>
+                <img src="images/teamwork.jpg" alt="The Alright Games Team">
+                <p>We may not have it all figured out, but we have the internet for a reason.</p>
+            </div>
 
-                <div class="content-box">
-                    <h3>Dev Music</h3>
-                    <p>Check out this absolute banger made by one of our very talented (and definitely awake) partners:</p>
-                    <audio controls>
-                        <source src="music/High Velocity Ballistic Projectiles.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <p>"High Velocity Ballistic Projectiles" — it's just like our older song, "Ballistic Projectiles," but even faster. Probably.</p>
-                </div>
-            </section>
-        </main>
+            <div class="content-box">
+                <h3>Dev Music</h3>
+                <p>Check out one of the absolute bangers one our buiness partners produced.</p><br>
+                <audio controls>
+                    <source src="music/High Velocity Ballistic Projectiles.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>                
+                <br><p>This song is called "High Velocity Ballistic Projectiles" named after our other song "Ballistic Projectiles"</p>
+            </div>
+        </section>
 
         <footer>
             <p>&copy; 2025 Jorc's Milestone Website. All rights reserved.</p>
         </footer>
     </div>
-
-    <script>
-        function toggleMenu(menu) {
-            const navList = document.getElementById('nav-list');
-            navList.classList.toggle('show');
-            menu.classList.toggle('active');
-        }
-    </script>
 </body>
+
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('show');
+    this.classList.toggle('active');
+    });
+</script>
 
 </html>
