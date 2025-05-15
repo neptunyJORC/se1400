@@ -264,7 +264,6 @@ footer {
     #wrapper {
         display: flex;
         flex-direction: column;
-        background-color: rgba(175, 101, 3, 0.822);
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
